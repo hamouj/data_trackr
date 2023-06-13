@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :academic_goal do
     student { nil }
-    goal { "MyString" }
+    goal { 'MyString' }
     trials { 1 }
     category { 1 }
     frequency { 1 }
