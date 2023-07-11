@@ -14,6 +14,6 @@ RSpec.describe AcademicGoal, type: :model do
   end
 
   describe 'enums' do
-    it { should define_enum_for(:category).with_values(['reading', 'writing', 'math']) }
+    it { should define_enum_for(:category).with_values([ 'reading', 'writing', 'math' ]) }
   end
 end

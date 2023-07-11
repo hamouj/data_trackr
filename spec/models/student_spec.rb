@@ -13,6 +13,9 @@ RSpec.describe Student, type: :model do
   end
 
   describe 'enums' do
-    it { should define_enum_for(:grade).with_values(['K', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13+']) }
+    it {
+      should define_enum_for(:grade).with_values([ 'K', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
+                                                   '13+' ])
+    }
   end
 end

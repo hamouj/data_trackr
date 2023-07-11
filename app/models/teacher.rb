@@ -1,9 +1,9 @@
 class Teacher < ApplicationRecord
-  has_many :teacher_students
+  has_many :teacher_students, dependent: :destroy
   has_many :students, through: :teacher_students
 
-  validates_presence_of :name, :email, :password
-  validates_uniqueness_of :email
+  validates :name, :email, :password, presence: true
+  validates :email, uniqueness: true
 
   has_secure_password
 end
