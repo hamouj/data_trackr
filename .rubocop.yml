@@ -43,3 +43,6 @@ Layout/SpaceAroundOperators:
 
 Layout/SpaceInsideArrayLiteralBrackets:
   EnforcedStyle: space
+
+Style/WordArray:
+  EnforcedStyle: brackets
